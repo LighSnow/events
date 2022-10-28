@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./build/css/index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="buttons-container">
+				<button id="step-1" class="btn btn-primary" type="button" data-js-action="click:get-users">Get Users</button>
+			</div>
+			<div class="table-container"></div>
+
+			<form class="d-none" id="form" name="addNewUser">
+				<div class="mb-3">
+					<label for="name" class="form-label">Name</label>
+					<input type="text" class="form-control" id="name" placeholder="Name" />
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email address</label>
+					<input type="email" class="form-control" id="email" placeholder="name@example.com" />
+				</div>
+				<div class="mb-3">
+					<label for="phone" class="form-label">Phone</label>
+					<input type="tel" class="form-control" id="phone" placeholder="Phone" />
+				</div>
+				<button class="btn btn-primary" data-js-action="click:add-new-user" type="button">Add</button>
+			</form>
+		</div>
+		<script src="build/js/index.js"></script>
+	</body>
+</html>

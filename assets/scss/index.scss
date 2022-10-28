@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.form-check {
+    $root: &;
+    display: inline-flex;
+    align-items: center;
+
+    &-label {
+        display: flex;
+        align-items: center;
+        margin: 0 5px;
+    }
+
+    #{$root} {
+        &-input {
+            float: initial;
+            margin: 0px 5px 0px 0px;
+        }
+    }
+}
